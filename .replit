@@ -1,0 +1,6 @@
+run = "python -c \"from provecart_client import route_verdict; print(route_verdict({'verdict': 'BLOCK', 'record_id': 'rec_demo', 'max_attempts': 3, 'corrections': [{'action': 'change_variant'}]})); print(route_verdict({'verdict': 'MATCH', 'record_id': 'rec_demo_2'}))\""
+entrypoint = "mcp_agent.py"
+language = "python3"
+
+[nix]
+channel = "stable-24_05"
