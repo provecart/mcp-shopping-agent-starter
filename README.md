@@ -58,3 +58,15 @@ it only verdicts. Full contract: https://provecart.com/agents.md
 MIT licensed sample code. The correction format is published and
 royalty-free to implement:
 https://provecart.com/standards/correction-format
+
+## Run it in your browser
+
+One-click import — each opens this repo in an online playground
+with an offline verdict-routing demo as the start command
+(`provecart_client.route_verdict` on BLOCK and MATCH payloads; no
+keys, no network). The full certification loop in `mcp_agent.py`
+talks to the live MCP server when you run it:
+
+- StackBlitz: https://stackblitz.com/github/provecart/mcp-shopping-agent-starter
+- CodeSandbox: https://codesandbox.io/s/github/provecart/mcp-shopping-agent-starter
+- Replit: https://replit.com/github/provecart/mcp-shopping-agent-starter
