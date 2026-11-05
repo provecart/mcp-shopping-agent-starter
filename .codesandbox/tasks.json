@@ -1,0 +1,15 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "pip install -r requirements.txt"
+    }
+  ],
+  "tasks": {
+    "offline-demo": {
+      "name": "Offline verdict-routing demo (no keys, no network)",
+      "command": "python -c \"from provecart_client import route_verdict; print(route_verdict({'verdict': 'BLOCK', 'record_id': 'rec_demo', 'max_attempts': 3, 'corrections': [{'action': 'change_variant'}]})); print(route_verdict({'verdict': 'MATCH', 'record_id': 'rec_demo_2'}))\"",
+      "runAtStart": true
+    }
+  }
+}
